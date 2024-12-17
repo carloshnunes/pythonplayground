@@ -3,6 +3,13 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 
 h1 {
@@ -25,4 +32,57 @@ li {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 18px;
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #fff; /* Cor do texto */
+  background-color: #3d52b2; /* Cor de fundo do botão */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+a:hover {
+  background-color: #2c3e91;
+}
+/* Estilo para botões principais */
+.button-primary {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3d52b2;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #2c3e91;
+}
+
+/* Estilo para botões secundários */
+.button-secondary {
+  text-decoration: none;
+  color: #3d52b2;
+  background-color: #fff;
+  border: 2px solid #3d52b2;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: #3d52b2;
+  color: #fff;
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Django</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+  <h1>Study Django</h1>
+  <p>Here are the first steps to start studying Django:</p>
+  <ul>
+    <li>Install Python and Django</li>
+    <li>Create your first Django project</li>
+    <li>Understand models, views, and templates</li>
+  </ul>
+  <a href="{% url 'home' %}" class="button-secondary">Back to Home</a>
+</body>
+
+</html>

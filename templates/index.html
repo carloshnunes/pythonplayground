@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página Inicial</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+  <h1>Bem-vindo ao Django!</h1>
+  <ul>
+    <li><a href="{% url 'study_django' %}" class="button-primary">Estudar Django</a></li>
+    <li><a href="{% url 'create_project' %}" class="button-primary">Criar um Projeto</a></li>
+    <li><a href="{% url 'learn_templates' %}" class="button-primary">Aprender Templates</a></li>
+  </ul>
+  <div>
+    <a href="{% url 'about' %}" class="button-secondary">Ir para a Página Sobre</a>
+  </div>
+</body>
+
+</html>

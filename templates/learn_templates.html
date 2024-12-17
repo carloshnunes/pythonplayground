@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Templates</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+  <h1>Learn Templates</h1>
+  <p>Templates in Django allow you to create dynamic HTML:</p>
+  <ul>
+    <li>Use <code>{{ variable }}</code> to display dynamic content</li>
+    <li>Load static files with <code>{% load static %}</code></li>
+    <li>Use loops and conditionals for flexibility</li>
+  </ul>
+  <a href="{% url 'home' %}" class="button-secondary">Back to Home</a>
+</body>
+
+</html>
